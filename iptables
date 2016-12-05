@@ -1,0 +1,11 @@
+//create rule to route 1780.0.0.1 to localhost
+iptables -t nat -A OUTPUT -p all -d 178.0.0.1 -j DNAT --to-destination 127.0.0.1
+
+//delete rules
+//list first
+iptables -t nat -L OUTPUT
+//check index
+iptables -t nat -L OUTPUT 2
+//delete
+iptables -t nat -L DELETE 2
+
