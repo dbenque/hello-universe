@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"syscall"
 
-	"github.com/kelseyhightower/kargo"
+	"github.com/dbenque/hello-universe/kargo"
 )
 
 var (
